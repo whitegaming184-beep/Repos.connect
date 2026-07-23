@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Respos-Connect | 85 GitHub AI & Dev Repositories</title>
+  <meta name="description" content="Respos-Connect – A curated hub of 85 GitHub repositories covering AI tools, design utilities, code helpers, and developer support resources." />
+  <meta property="og:title" content="Respos-Connect | 85 GitHub AI & Dev Repositories" />
+  <meta property="og:description" content="Explore 85 hand-picked GitHub repositories across AI, design, code help, and developer support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════ CANVAS WAVE BACKGROUND ══════════════════ -->
+  <canvas id="waveCanvas" aria-hidden="true"></canvas>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="logo" aria-label="Respos-Connect home">
+        <span class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="14" cy="14" r="13" stroke="url(#lgrad)" stroke-width="2"/>
+            <path d="M8 14 L14 8 L20 14 L14 20 Z" fill="url(#lgrad2)"/>
+            <defs>
+              <linearGradient id="lgrad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#d4af37"/>
+                <stop offset="100%" stop-color="#f5d020"/>
+              </linearGradient>
+              <linearGradient id="lgrad2" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#d4af37"/>
+                <stop offset="100%" stop-color="#fff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">Respos<span class="logo-accent">-Connect</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#ai-tools" class="nav-link">AI Tools</a></li>
+        <li><a href="#design-tools" class="nav-link">Design</a></li>
+        <li><a href="#code-help" class="nav-link">Code Help</a></li>
+        <li><a href="#learning" class="nav-link">Learning</a></li>
+        <li><a href="#support" class="nav-link">Support</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" role="menu" aria-hidden="true">
+      <a href="#ai-tools" class="mobile-link" role="menuitem">AI Tools</a>
+      <a href="#design-tools" class="mobile-link" role="menuitem">Design</a>
+      <a href="#code-help" class="mobile-link" role="menuitem">Code Help</a>
+      <a href="#learning" class="mobile-link" role="menuitem">Learning</a>
+      <a href="#support" class="mobile-link" role="menuitem">Support</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="hero" id="hero" aria-labelledby="heroHeading">
+    <div class="hero-3d-container" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="cube-wrapper">
+        <div class="cube" id="cube3d">
+          <div class="face front">AI</div>
+          <div class="face back">DEV</div>
+          <div class="face left">UX</div>
+          <div class="face right">ML</div>
+          <div class="face top">OSS</div>
+          <div class="face bottom">HUB</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">85 Curated Repositories</div>
+      <h1 id="heroHeading" class="hero-title">
+        The Developer's<br/>
+        <span class="hero-accent">GitHub Arsenal</span>
+      </h1>
+      <p class="hero-subtitle">
+        Hand-picked repositories spanning AI tools, design utilities,
+        code helpers, and developer support — all in one glossy hub.
+      </p>
+      <div class="hero-actions">
+        <a href="#ai-tools" class="btn btn-primary">Explore Repos</a>
+        <a href="#support" class="btn btn-secondary">Get Support</a>
+      </div>
+      <div class="hero-stats" role="list" aria-label="Statistics">
+        <div class="stat" role="listitem"><span class="stat-num">85</span><span class="stat-label">Repositories</span></div>
+        <div class="stat" role="listitem"><span class="stat-num">5</span><span class="stat-label">Categories</span></div>
+        <div class="stat" role="listitem"><span class="stat-num">∞</span><span class="stat-label">Possibilities</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ MAIN CONTENT ══════════════════ -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- ── CATEGORY: AI TOOLS ── -->
+    <section class="category-section" id="ai-tools" aria-labelledby="aiToolsHeading">
+      <div class="section-header">
+        <div class="category-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="#d4af37" stroke-width="1.5"/><path d="M10 16 Q16 8 22 16 Q16 24 10 16Z" fill="#d4af37" opacity="0.8"/><circle cx="16" cy="16" r="3" fill="#fff"/></svg>
+        </div>
+        <div>
+          <span class="category-label">Category 01</span>
+          <h2 id="aiToolsHeading" class="section-title">AI Tools & Frameworks</h2>
+          <p class="section-desc">Powerful AI libraries, LLM frameworks, machine learning utilities and autonomous agent projects.</p>
+        </div>
+      </div>
+      <div class="repo-grid" role="list">
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 87k</span>
+          </div>
+          <h3 class="repo-name">LangChain</h3>
+          <p class="repo-desc">Framework for developing applications powered by language models. Chains, agents, retrieval — all unified.</p>
+          <div class="card-footer">
+            <a href="https://github.com/langchain-ai/langchain" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit LangChain on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 51k</span>
+          </div>
+          <h3 class="repo-name">AutoGPT</h3>
+          <p class="repo-desc">Autonomous GPT-4 agent that chains thoughts and tools to complete tasks without human intervention.</p>
+          <div class="card-footer">
+            <a href="https://github.com/Significant-Gravitas/AutoGPT" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit AutoGPT on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 32k</span>
+          </div>
+          <h3 class="repo-name">Ollama</h3>
+          <p class="repo-desc">Run large language models locally with a dead-simple API. Supports Llama 3, Mistral, Gemma, and more.</p>
+          <div class="card-footer">
+            <a href="https://github.com/ollama/ollama" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Ollama on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 29k</span>
+          </div>
+          <h3 class="repo-name">Vercel AI SDK</h3>
+          <p class="repo-desc">The AI Toolkit for TypeScript developers. Stream AI responses, build chatbots, and integrate LLMs into Next.js apps.</p>
+          <div class="card-footer">
+            <a href="https://github.com/vercel/ai" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Vercel AI SDK on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 28k</span>
+          </div>
+          <h3 class="repo-name">Hugging Face Transformers</h3>
+          <p class="repo-desc">State-of-the-art ML for PyTorch, TensorFlow, and JAX. Thousands of pretrained models for text, vision, audio.</p>
+          <div class="card-footer">
+            <a href="https://github.com/huggingface/transformers" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit HuggingFace Transformers on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 23k</span>
+          </div>
+          <h3 class="repo-name">CrewAI</h3>
+          <p class="repo-desc">Framework for orchestrating role-playing, autonomous AI agents. Build multi-agent pipelines that collaborate on tasks.</p>
+          <div class="card-footer">
+            <a href="https://github.com/crewAIInc/crewAI" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit CrewAI on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 19k</span>
+          </div>
+          <h3 class="repo-name">LlamaIndex</h3>
+          <p class="repo-desc">Turn your documents into a queryable knowledge base. RAG pipelines, vector stores, and agent tooling.</p>
+          <div class="card-footer">
+            <a href="https://github.com/run-llama/llama_index" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit LlamaIndex on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 18k</span>
+          </div>
+          <h3 class="repo-name">Open Interpreter</h3>
+          <p class="repo-desc">Let LLMs run code on your computer. Natural language interface to execute Python, JavaScript, Shell commands.</p>
+          <div class="card-footer">
+            <a href="https://github.com/OpenInterpreter/open-interpreter" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Open Interpreter on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Rust</span>
+            <span class="repo-stars">★ 15k</span>
+          </div>
+          <h3 class="repo-name">Candle (HuggingFace)</h3>
+          <p class="repo-desc">Minimalist ML framework for Rust. GPU-accelerated tensor computation with support for LLMs and diffusion models.</p>
+          <div class="card-footer">
+            <a href="https://github.com/huggingface/candle" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Candle on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 13k</span>
+          </div>
+          <h3 class="repo-name">Phidata</h3>
+          <p class="repo-desc">Build AI agents with memory, knowledge, and tools. Multimodal agents with a clean Python-first interface.</p>
+          <div class="card-footer">
+            <a href="https://github.com/phidatahq/phidata" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Phidata on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 12k</span>
+          </div>
+          <h3 class="repo-name">OpenAI Node SDK</h3>
+          <p class="repo-desc">Official Node.js library for the OpenAI API. Supports GPT-4, DALL·E, Whisper, embeddings, and fine-tuning.</p>
+          <div class="card-footer">
+            <a href="https://github.com/openai/openai-node" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit OpenAI Node SDK on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 11k</span>
+          </div>
+          <h3 class="repo-name">DSPy</h3>
+          <p class="repo-desc">Framework for algorithmically optimising LM prompts and weights. Replace brittle prompts with compiled programs.</p>
+          <div class="card-footer">
+            <a href="https://github.com/stanfordnlp/dspy" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit DSPy on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 10k</span>
+          </div>
+          <h3 class="repo-name">Semantic Kernel</h3>
+          <p class="repo-desc">Microsoft's SDK for integrating AI into apps. Plugins, planners, and memory — available for Python, .NET, Java.</p>
+          <div class="card-footer">
+            <a href="https://github.com/microsoft/semantic-kernel" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Semantic Kernel on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 9k</span>
+          </div>
+          <h3 class="repo-name">Instructor</h3>
+          <p class="repo-desc">Structured outputs for LLMs using Pydantic. Extract validated JSON from any language model response.</p>
+          <div class="card-footer">
+            <a href="https://github.com/jxnl/instructor" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Instructor on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 8k</span>
+          </div>
+          <h3 class="repo-name">LiteLLM</h3>
+          <p class="repo-desc">Unified API for 100+ LLMs. Call GPT-4, Claude, Gemini, Mistral with the same interface and manage costs.</p>
+          <div class="card-footer">
+            <a href="https://github.com/BerriAI/litellm" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit LiteLLM on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 7k</span>
+          </div>
+          <h3 class="repo-name">Haystack</h3>
+          <p class="repo-desc">End-to-end NLP framework for building RAG pipelines and question-answering systems at scale.</p>
+          <div class="card-footer">
+            <a href="https://github.com/deepset-ai/haystack" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Haystack on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 6k</span>
+          </div>
+          <h3 class="repo-name">MemGPT</h3>
+          <p class="repo-desc">LLM agents with self-editing memory. Give your AI agents persistent, virtually unlimited context windows.</p>
+          <div class="card-footer">
+            <a href="https://github.com/cpacker/MemGPT" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit MemGPT on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 5k</span>
+          </div>
+          <h3 class="repo-name">Guardrails AI</h3>
+          <p class="repo-desc">Add guardrails to LLM outputs. Validate, correct, and reask models to produce safe, structured responses.</p>
+          <div class="card-footer">
+            <a href="https://github.com/guardrails-ai/guardrails" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Guardrails AI on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── CATEGORY: DESIGN TOOLS ── -->
+    <section class="category-section" id="design-tools" aria-labelledby="designToolsHeading">
+      <div class="section-header">
+        <div class="category-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="28" height="28" rx="6" stroke="#d4af37" stroke-width="1.5"/><circle cx="11" cy="11" r="3" fill="#d4af37" opacity="0.8"/><path d="M18 18 L26 26" stroke="#d4af37" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <span class="category-label">Category 02</span>
+          <h2 id="designToolsHeading" class="section-title">Design Tools & Resources</h2>
+          <p class="section-desc">UI component libraries, CSS frameworks, icon sets, animation tools, and design systems.</p>
+        </div>
+      </div>
+      <div class="repo-grid" role="list">
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 91k</span>
+          </div>
+          <h3 class="repo-name">Shadcn/UI</h3>
+          <p class="repo-desc">Beautifully designed components built with Radix UI and Tailwind CSS. Copy-paste into your project.</p>
+          <div class="card-footer">
+            <a href="https://github.com/shadcn-ui/ui" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Shadcn UI on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 47k</span>
+          </div>
+          <h3 class="repo-name">Framer Motion</h3>
+          <p class="repo-desc">Production-ready motion library for React. Gestures, drag, spring animations, layout transitions and more.</p>
+          <div class="card-footer">
+            <a href="https://github.com/framer/motion" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Framer Motion on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#563d7c">CSS</span>
+            <span class="repo-stars">★ 38k</span>
+          </div>
+          <h3 class="repo-name">Animate.css</h3>
+          <p class="repo-desc">Just-add-water CSS animations. A cross-browser library of 78 ready-to-use animation classes.</p>
+          <div class="card-footer">
+            <a href="https://github.com/animate-css/animate.css" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Animate.css on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 35k</span>
+          </div>
+          <h3 class="repo-name">Lucide Icons</h3>
+          <p class="repo-desc">Beautiful and consistent open-source icons. 1,400+ SVG icons with React, Vue, and Svelte packages.</p>
+          <div class="card-footer">
+            <a href="https://github.com/lucide-icons/lucide" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Lucide Icons on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 29k</span>
+          </div>
+          <h3 class="repo-name">Three.js</h3>
+          <p class="repo-desc">The most popular 3D library for the web. Create stunning 3D graphics, animations, and WebGL experiences.</p>
+          <div class="card-footer">
+            <a href="https://github.com/mrdoob/three.js" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Three.js on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 27k</span>
+          </div>
+          <h3 class="repo-name">GSAP (GreenSock)</h3>
+          <p class="repo-desc">Professional animation library for the web. Blazing fast, works everywhere, and extremely feature-rich.</p>
+          <div class="card-footer">
+            <a href="https://github.com/greensock/GSAP" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit GSAP on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#563d7c">CSS</span>
+            <span class="repo-stars">★ 22k</span>
+          </div>
+          <h3 class="repo-name">Open Props</h3>
+          <p class="repo-desc">CSS custom properties (variables) for adaptive, consistent design. The design token library you were missing.</p>
+          <div class="card-footer">
+            <a href="https://github.com/argyleink/open-props" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Open Props on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 21k</span>
+          </div>
+          <h3 class="repo-name">Radix UI</h3>
+          <p class="repo-desc">Unstyled, accessible UI components for building design systems and web apps in React. WAI-ARIA compliant.</p>
+          <div class="card-footer">
+            <a href="https://github.com/radix-ui/primitives" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Radix UI on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">JavaScript</span>
+            <span class="repo-stars">★ 19k</span>
+          </div>
+          <h3 class="repo-name">Lottie Web</h3>
+          <p class="repo-desc">Render Adobe After Effects animations in real time on web, iOS, and Android using JSON files.</p>
+          <div class="card-footer">
+            <a href="https://github.com/airbnb/lottie-web" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Lottie Web on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 18k</span>
+          </div>
+          <h3 class="repo-name">Storybook</h3>
+          <p class="repo-desc">Frontend workshop for UI components and pages. Build, document, and test components in isolation.</p>
+          <div class="card-footer">
+            <a href="https://github.com/storybookjs/storybook" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Storybook on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 17k</span>
+          </div>
+          <h3 class="repo-name">Tailwind CSS</h3>
+          <p class="repo-desc">Utility-first CSS framework for rapid UI development. Build modern designs with composable, low-level utilities.</p>
+          <div class="card-footer">
+            <a href="https://github.com/tailwindlabs/tailwindcss" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Tailwind CSS on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 16k</span>
+          </div>
+          <h3 class="repo-name">MagicUI</h3>
+          <p class="repo-desc">50+ free animated, open-source React components for landing pages and design systems. Built on Tailwind & Motion.</p>
+          <div class="card-footer">
+            <a href="https://github.com/magicuidesign/magicui" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit MagicUI on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#563d7c">CSS</span>
+            <span class="repo-stars">★ 14k</span>
+          </div>
+          <h3 class="repo-name">MVP.css</h3>
+          <p class="repo-desc">Minimalist stylesheet for HTML elements. No classes needed — style raw HTML for prototypes instantly.</p>
+          <div class="card-footer">
+            <a href="https://github.com/andybrewer/mvp" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit MVP.css on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 13k</span>
+          </div>
+          <h3 class="repo-name">Aceternity UI</h3>
+          <p class="repo-desc">Trending animated React components. Beams, sparkles, background grids — premium UI effects for free.</p>
+          <div class="card-footer">
+            <a href="https://github.com/aceternity/ui" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Aceternity UI on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 12k</span>
+          </div>
+          <h3 class="repo-name">Vanta.js</h3>
+          <p class="repo-desc">Animated 3D backgrounds for websites. Waves, birds, fog, globe and more with Three.js/WebGL.</p>
+          <div class="card-footer">
+            <a href="https://github.com/tengbao/vanta" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Vanta.js on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">JavaScript</span>
+            <span class="repo-stars">★ 11k</span>
+          </div>
+          <h3 class="repo-name">Particles.js</h3>
+          <p class="repo-desc">Lightweight JavaScript library for creating beautiful interactive particle systems and background effects.</p>
+          <div class="card-footer">
+            <a href="https://github.com/VincentGarreau/particles.js" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Particles.js on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">HTML</span>
+            <span class="repo-stars">★ 9k</span>
+          </div>
+          <h3 class="repo-name">Glassmorphism Generator</h3>
+          <p class="repo-desc">CSS glassmorphism effect generator. Customise blur, transparency, and borders for modern frosted glass UI.</p>
+          <div class="card-footer">
+            <a href="https://github.com/ui-glass/glassmorphism" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Glassmorphism Generator on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── CATEGORY: CODE HELP ── -->
+    <section class="category-section" id="code-help" aria-labelledby="codeHelpHeading">
+      <div class="section-header">
+        <div class="category-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="4" stroke="#d4af37" stroke-width="1.5"/><path d="M10 14 L6 16 L10 18" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 14 L26 16 L22 18" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 20 L18 12" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <span class="category-label">Category 03</span>
+          <h2 id="codeHelpHeading" class="section-title">Code Help & Productivity</h2>
+          <p class="repo-desc">Developer tools, linters, formatters, code generators, and productivity boosters to supercharge your workflow.</p>
+        </div>
+      </div>
+      <div class="repo-grid" role="list">
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 54k</span>
+          </div>
+          <h3 class="repo-name">ESLint</h3>
+          <p class="repo-desc">The pluggable linting utility for JavaScript and TypeScript. Catch bugs, enforce code style, and write cleaner code.</p>
+          <div class="card-footer">
+            <a href="https://github.com/eslint/eslint" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit ESLint on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 49k</span>
+          </div>
+          <h3 class="repo-name">Prettier</h3>
+          <p class="repo-desc">Opinionated code formatter. Enforces consistent style across your entire codebase automatically.</p>
+          <div class="card-footer">
+            <a href="https://github.com/prettier/prettier" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Prettier on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 38k</span>
+          </div>
+          <h3 class="repo-name">Ruff</h3>
+          <p class="repo-desc">Extremely fast Python linter and formatter written in Rust. 10-100x faster than existing tools.</p>
+          <div class="card-footer">
+            <a href="https://github.com/astral-sh/ruff" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Ruff on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Rust</span>
+            <span class="repo-stars">★ 35k</span>
+          </div>
+          <h3 class="repo-name">Zed Editor</h3>
+          <p class="repo-desc">High-performance, collaborative code editor written in Rust. Native multithreaded rendering and built-in AI.</p>
+          <div class="card-footer">
+            <a href="https://github.com/zed-industries/zed" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Zed Editor on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 32k</span>
+          </div>
+          <h3 class="repo-name">Vite</h3>
+          <p class="repo-desc">Next generation frontend tooling. Instant server start, lightning HMR, and optimised production builds.</p>
+          <div class="card-footer">
+            <a href="https://github.com/vitejs/vite" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Vite on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 28k</span>
+          </div>
+          <h3 class="repo-name">Turbo</h3>
+          <p class="repo-desc">High-performance build system for JavaScript and TypeScript monorepos. Incremental builds, remote caching.</p>
+          <div class="card-footer">
+            <a href="https://github.com/vercel/turbo" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Turbo on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Rust</span>
+            <span class="repo-stars">★ 25k</span>
+          </div>
+          <h3 class="repo-name">Biome</h3>
+          <p class="repo-desc">Toolchain for web projects. Formatter and linter for JavaScript, TypeScript, JSON — fast and unified.</p>
+          <div class="card-footer">
+            <a href="https://github.com/biomejs/biome" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Biome on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 22k</span>
+          </div>
+          <h3 class="repo-name">Black</h3>
+          <p class="repo-desc">The uncompromising Python code formatter. Consistent style, no arguments — just Black and done.</p>
+          <div class="card-footer">
+            <a href="https://github.com/psf/black" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Black on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 20k</span>
+          </div>
+          <h3 class="repo-name">TypeDoc</h3>
+          <p class="repo-desc">Documentation generator for TypeScript projects. Auto-generate beautiful docs from your TypeScript source code.</p>
+          <div class="card-footer">
+            <a href="https://github.com/TypeStrong/typedoc" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit TypeDoc on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 19k</span>
+          </div>
+          <h3 class="repo-name">Pre-commit</h3>
+          <p class="repo-desc">Framework for managing and maintaining multi-language pre-commit hooks. Catch issues before they reach CI.</p>
+          <div class="card-footer">
+            <a href="https://github.com/pre-commit/pre-commit" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Pre-commit on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 17k</span>
+          </div>
+          <h3 class="repo-name">Nx</h3>
+          <p class="repo-desc">Smart, fast and extensible build system for monorepos. Caching, task orchestration, and code generation.</p>
+          <div class="card-footer">
+            <a href="https://github.com/nrwl/nx" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Nx on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 15k</span>
+          </div>
+          <h3 class="repo-name">Plop</h3>
+          <p class="repo-desc">Micro-generator framework that makes it easy for an entire team to create files with a level of uniformity.</p>
+          <div class="card-footer">
+            <a href="https://github.com/plopjs/plop" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Plop on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 13k</span>
+          </div>
+          <h3 class="repo-name">Commitizen</h3>
+          <p class="repo-desc">Conventional commit message tool. Helps your team write standardised commit messages with an interactive CLI.</p>
+          <div class="card-footer">
+            <a href="https://github.com/commitizen-tools/commitizen" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Commitizen on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">JavaScript</span>
+            <span class="repo-stars">★ 11k</span>
+          </div>
+          <h3 class="repo-name">Husky</h3>
+          <p class="repo-desc">Git hooks made easy. Lint commits, run tests, and more before pushing with zero config.</p>
+          <div class="card-footer">
+            <a href="https://github.com/typicode/husky" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Husky on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Rust</span>
+            <span class="repo-stars">★ 9k</span>
+          </div>
+          <h3 class="repo-name">Bacon</h3>
+          <p class="repo-desc">Background Rust code checker. Displays the output of cargo check in a comfortable, always-on panel.</p>
+          <div class="card-footer">
+            <a href="https://github.com/Canop/bacon" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Bacon on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 8k</span>
+          </div>
+          <h3 class="repo-name">Rich</h3>
+          <p class="repo-desc">Rich text and beautiful formatting in the terminal. Tables, syntax highlighting, progress bars, markdown rendering.</p>
+          <div class="card-footer">
+            <a href="https://github.com/Textualize/rich" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Rich on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 7k</span>
+          </div>
+          <h3 class="repo-name">Knip</h3>
+          <p class="repo-desc">Find unused files, exports, and dependencies in JavaScript and TypeScript projects. Keep your codebase clean.</p>
+          <div class="card-footer">
+            <a href="https://github.com/webpro-nl/knip" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Knip on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 6k</span>
+          </div>
+          <h3 class="repo-name">Typer</h3>
+          <p class="repo-desc">Build great CLIs with Python, based on Python type hints. Auto-generates help text, completion, and validation.</p>
+          <div class="card-footer">
+            <a href="https://github.com/fastapi/typer" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Typer on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── CATEGORY: LEARNING & RESOURCES ── -->
+    <section class="category-section" id="learning" aria-labelledby="learningHeading">
+      <div class="section-header">
+        <div class="category-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4 L28 10 L16 16 L4 10 Z" stroke="#d4af37" stroke-width="1.5" stroke-linejoin="round"/><path d="M4 10 L4 20 M28 10 L28 20 M16 16 L16 26" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round"/><path d="M8 22 Q16 26 24 22" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <span class="category-label">Category 04</span>
+          <h2 id="learningHeading" class="section-title">Learning & Resources</h2>
+          <p class="section-desc">Curated lists, tutorials, cheat sheets, and educational repositories to level up your development skills.</p>
+        </div>
+      </div>
+      <div class="repo-grid" role="list">
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 293k</span>
+          </div>
+          <h3 class="repo-name">Awesome</h3>
+          <p class="repo-desc">The original awesome list. Curated lists of awesome things related to every topic imaginable in tech.</p>
+          <div class="card-footer">
+            <a href="https://github.com/sindresorhus/awesome" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Awesome on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 225k</span>
+          </div>
+          <h3 class="repo-name">Free Programming Books</h3>
+          <p class="repo-desc">Freely available programming books across hundreds of languages. The most starred GitHub repo for learning.</p>
+          <div class="card-footer">
+            <a href="https://github.com/EbookFoundation/free-programming-books" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Free Programming Books on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 198k</span>
+          </div>
+          <h3 class="repo-name">Developer Roadmap</h3>
+          <p class="repo-desc">Community-driven roadmaps, articles and resources to guide learning for frontend, backend, and DevOps paths.</p>
+          <div class="card-footer">
+            <a href="https://github.com/kamranahmedse/developer-roadmap" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Developer Roadmap on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 172k</span>
+          </div>
+          <h3 class="repo-name">Coding Interview University</h3>
+          <p class="repo-desc">Multi-month study plan for going from web developer to software engineer at a large company.</p>
+          <div class="card-footer">
+            <a href="https://github.com/jwasham/coding-interview-university" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Coding Interview University on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 145k</span>
+          </div>
+          <h3 class="repo-name">System Design Primer</h3>
+          <p class="repo-desc">Learn how to design large-scale systems. Prep for system design interviews with Anki flashcards.</p>
+          <div class="card-footer">
+            <a href="https://github.com/donnemartin/system-design-primer" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit System Design Primer on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 63k</span>
+          </div>
+          <h3 class="repo-name">Awesome Machine Learning</h3>
+          <p class="repo-desc">A curated list of awesome ML frameworks, libraries, and software by language — the definitive ML resource list.</p>
+          <div class="card-footer">
+            <a href="https://github.com/josephmisiti/awesome-machine-learning" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Awesome Machine Learning on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">JavaScript</span>
+            <span class="repo-stars">★ 58k</span>
+          </div>
+          <h3 class="repo-name">You Don't Know JS</h3>
+          <p class="repo-desc">Deep-dive into JavaScript mechanics. Series of books covering scope, closures, async, types, and more.</p>
+          <div class="card-footer">
+            <a href="https://github.com/getify/You-Dont-Know-JS" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit You Don't Know JS on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 52k</span>
+          </div>
+          <h3 class="repo-name">Prompt Engineering Guide</h3>
+          <p class="repo-desc">Guides, papers, lectures, notebooks and resources for prompt engineering LLMs. Comprehensive and up-to-date.</p>
+          <div class="card-footer">
+            <a href="https://github.com/dair-ai/Prompt-Engineering-Guide" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Prompt Engineering Guide on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 46k</span>
+          </div>
+          <h3 class="repo-name">ML for Beginners (Microsoft)</h3>
+          <p class="repo-desc">12 weeks, 26 lessons, 52 quizzes — classic ML from Microsoft. Hands-on with Python and Scikit-learn.</p>
+          <div class="card-footer">
+            <a href="https://github.com/microsoft/ML-For-Beginners" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit ML for Beginners on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">JavaScript</span>
+            <span class="repo-stars">★ 41k</span>
+          </div>
+          <h3 class="repo-name">30 Seconds of Code</h3>
+          <p class="repo-desc">Short JavaScript code snippets for everyday use. Well-documented with examples, covering all common use cases.</p>
+          <div class="card-footer">
+            <a href="https://github.com/Chalarangelo/30-seconds-of-code" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit 30 Seconds of Code on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 37k</span>
+          </div>
+          <h3 class="repo-name">Tech Interview Handbook</h3>
+          <p class="repo-desc">Curated coding interview preparation materials. Algorithms, system design, behavioural questions and more.</p>
+          <div class="card-footer">
+            <a href="https://github.com/yangshun/tech-interview-handbook" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Tech Interview Handbook on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 35k</span>
+          </div>
+          <h3 class="repo-name">Awesome ChatGPT Prompts</h3>
+          <p class="repo-desc">This repo includes ChatGPT prompt curation to use ChatGPT for various tasks effectively. Community-driven.</p>
+          <div class="card-footer">
+            <a href="https://github.com/f/awesome-chatgpt-prompts" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Awesome ChatGPT Prompts on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 29k</span>
+          </div>
+          <h3 class="repo-name">FastAI</h3>
+          <p class="repo-desc">Deep learning library for practitioners. Makes deep learning accessible without sacrificing flexibility or performance.</p>
+          <div class="card-footer">
+            <a href="https://github.com/fastai/fastai" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit FastAI on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 25k</span>
+          </div>
+          <h3 class="repo-name">Node Best Practices</h3>
+          <p class="repo-desc">The largest Node.js best practices list. 100+ best practices, style guides, and architectural tips.</p>
+          <div class="card-footer">
+            <a href="https://github.com/goldbergyoni/nodebestpractices" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Node Best Practices on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 23k</span>
+          </div>
+          <h3 class="repo-name">Awesome Deep Learning</h3>
+          <p class="repo-desc">A curated list of awesome Deep Learning tutorials, projects, and communities across all major frameworks.</p>
+          <div class="card-footer">
+            <a href="https://github.com/ChristosChristofidis/awesome-deep-learning" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Awesome Deep Learning on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 21k</span>
+          </div>
+          <h3 class="repo-name">Awesome GPT-4</h3>
+          <p class="repo-desc">Curated list of GPT-4 resources: tools, examples, demos, papers, and research — all in one place.</p>
+          <div class="card-footer">
+            <a href="https://github.com/radi-cho/awesome-gpt4" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Awesome GPT-4 on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Markdown</span>
+            <span class="repo-stars">★ 18k</span>
+          </div>
+          <h3 class="repo-name">AI Exploits</h3>
+          <p class="repo-desc">A repository of real AI security vulnerabilities, attack techniques, and adversarial prompt examples for red-teaming.</p>
+          <div class="card-footer">
+            <a href="https://github.com/protectai/ai-exploits" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit AI Exploits on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── CATEGORY: SUPPORT & INFRASTRUCTURE ── -->
+    <section class="category-section" id="support" aria-labelledby="supportHeading">
+      <div class="section-header">
+        <div class="category-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#d4af37" stroke-width="1.5"/><circle cx="16" cy="16" r="6" stroke="#d4af37" stroke-width="1.5"/><path d="M16 2 L16 10 M16 22 L16 30 M2 16 L10 16 M22 16 L30 16" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <span class="category-label">Category 05</span>
+          <h2 id="supportHeading" class="section-title">Support & Infrastructure</h2>
+          <p class="section-desc">DevOps tools, monitoring, testing frameworks, CI/CD pipelines, and developer support utilities.</p>
+        </div>
+      </div>
+      <div class="repo-grid" role="list">
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 52k</span>
+          </div>
+          <h3 class="repo-name">Pytest</h3>
+          <p class="repo-desc">Makes it easy to write small, readable tests and can scale to support complex functional testing for apps and libraries.</p>
+          <div class="card-footer">
+            <a href="https://github.com/pytest-dev/pytest" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Pytest on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 44k</span>
+          </div>
+          <h3 class="repo-name">Vitest</h3>
+          <p class="repo-desc">Vite-native testing framework. Blazing fast unit tests with first-class TypeScript and ESM support.</p>
+          <div class="card-footer">
+            <a href="https://github.com/vitest-dev/vitest" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Vitest on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 41k</span>
+          </div>
+          <h3 class="repo-name">Playwright</h3>
+          <p class="repo-desc">Reliable end-to-end testing for modern web apps. Cross-browser, cross-platform, cross-language automation.</p>
+          <div class="card-footer">
+            <a href="https://github.com/microsoft/playwright" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Playwright on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 38k</span>
+          </div>
+          <h3 class="repo-name">Docker (Compose)</h3>
+          <p class="repo-desc">Define and run multi-container Docker applications with a single YAML file. The go-to tool for dev environments.</p>
+          <div class="card-footer">
+            <a href="https://github.com/docker/compose" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Docker Compose on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Go</span>
+            <span class="repo-stars">★ 35k</span>
+          </div>
+          <h3 class="repo-name">Prometheus</h3>
+          <p class="repo-desc">Open-source monitoring and alerting toolkit. Time series database, multi-dimensional data model, PromQL.</p>
+          <div class="card-footer">
+            <a href="https://github.com/prometheus/prometheus" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Prometheus on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Go</span>
+            <span class="repo-stars">★ 34k</span>
+          </div>
+          <h3 class="repo-name">Grafana</h3>
+          <p class="repo-desc">Open observability platform. Dashboards, alerting, and data exploration for metrics, logs, and traces.</p>
+          <div class="card-footer">
+            <a href="https://github.com/grafana/grafana" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Grafana on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Go</span>
+            <span class="repo-stars">★ 31k</span>
+          </div>
+          <h3 class="repo-name">Traefik</h3>
+          <p class="repo-desc">Modern HTTP reverse proxy and load balancer that makes deploying microservices easy. Auto-discovers services.</p>
+          <div class="card-footer">
+            <a href="https://github.com/traefik/traefik" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Traefik on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 28k</span>
+          </div>
+          <h3 class="repo-name">Sentry JavaScript</h3>
+          <p class="repo-desc">Error tracking and performance monitoring for JavaScript. Catch bugs, understand them, and fix them faster.</p>
+          <div class="card-footer">
+            <a href="https://github.com/getsentry/sentry-javascript" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Sentry JavaScript on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Go</span>
+            <span class="repo-stars">★ 26k</span>
+          </div>
+          <h3 class="repo-name">Act</h3>
+          <p class="repo-desc">Run GitHub Actions locally. Test and debug your workflows without pushing to GitHub every time.</p>
+          <div class="card-footer">
+            <a href="https://github.com/nektos/act" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Act on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Go</span>
+            <span class="repo-stars">★ 23k</span>
+          </div>
+          <h3 class="repo-name">Terraform</h3>
+          <p class="repo-desc">Infrastructure as Code tool. Provision, change, and version infrastructure resources across cloud providers.</p>
+          <div class="card-footer">
+            <a href="https://github.com/hashicorp/terraform" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Terraform on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 21k</span>
+          </div>
+          <h3 class="repo-name">Locust</h3>
+          <p class="repo-desc">Scalable load testing framework in Python. Define user behaviour in code and swarm your system with millions of users.</p>
+          <div class="card-footer">
+            <a href="https://github.com/locustio/locust" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Locust on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 19k</span>
+          </div>
+          <h3 class="repo-name">OpenTelemetry JS</h3>
+          <p class="repo-desc">Observability framework for cloud-native software. Distributed tracing, metrics, and logs for JS applications.</p>
+          <div class="card-footer">
+            <a href="https://github.com/open-telemetry/opentelemetry-js" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit OpenTelemetry JS on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 17k</span>
+          </div>
+          <h3 class="repo-name">Celery</h3>
+          <p class="repo-desc">Distributed task queue. Asynchronous job processing for Python with Redis or RabbitMQ as brokers.</p>
+          <div class="card-footer">
+            <a href="https://github.com/celery/celery" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Celery on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 15k</span>
+          </div>
+          <h3 class="repo-name">Changesets</h3>
+          <p class="repo-desc">Manage semantic versioning and changelogs in monorepos. Streamlines releases for npm packages with automation.</p>
+          <div class="card-footer">
+            <a href="https://github.com/changesets/changesets" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Changesets on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#3572A5">Python</span>
+            <span class="repo-stars">★ 13k</span>
+          </div>
+          <h3 class="repo-name">FastAPI</h3>
+          <p class="repo-desc">Modern, fast web framework for building APIs with Python based on standard type hints. Auto-generates docs.</p>
+          <div class="card-footer">
+            <a href="https://github.com/fastapi/fastapi" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit FastAPI on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Go</span>
+            <span class="repo-stars">★ 11k</span>
+          </div>
+          <h3 class="repo-name">Minio</h3>
+          <p class="repo-desc">High-performance, S3 compatible object storage. Self-hosted alternative to AWS S3 with full API compatibility.</p>
+          <div class="card-footer">
+            <a href="https://github.com/minio/minio" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Minio on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#f34b7d">TypeScript</span>
+            <span class="repo-stars">★ 9k</span>
+          </div>
+          <h3 class="repo-name">Hono</h3>
+          <p class="repo-desc">Fast, lightweight web framework for the Edges. Works on Cloudflare Workers, Deno, Bun, and Node.js.</p>
+          <div class="card-footer">
+            <a href="https://github.com/honojs/hono" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Hono on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+        <article class="repo-card" role="listitem" data-aos>
+          <div class="card-top">
+            <span class="repo-lang" style="background:#e34c26">Go</span>
+            <span class="repo-stars">★ 7k</span>
+          </div>
+          <h3 class="repo-name">Dagger</h3>
+          <p class="repo-desc">Portable, programmable CI/CD pipelines. Write pipelines in Python, Go, or TypeScript and run them anywhere.</p>
+          <div class="card-footer">
+            <a href="https://github.com/dagger/dagger" class="repo-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Dagger on GitHub">View Repo →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-text">Respos<span class="logo-accent">-Connect</span></span>
+        <p class="footer-tagline">Curated Developer Resources — All in One Place</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h3 class="footer-col-title">Categories</h3>
+          <ul>
+            <li><a href="#ai-tools">AI Tools & Frameworks</a></li>
+            <li><a href="#design-tools">Design Tools & Resources</a></li>
+            <li><a href="#code-help">Code Help & Productivity</a></li>
+            <li><a href="#learning">Learning & Resources</a></li>
+            <li><a href="#support">Support & Infrastructure</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Quick Stats</h3>
+          <ul>
+            <li>85 Repositories</li>
+            <li>5 Categories</li>
+            <li>Community Driven</li>
+            <li>Regularly Updated</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Designed &amp; Built with ❤️ by <strong>Arnav Barua</strong> · All repository links point to their official GitHub pages · Open Source Forever</p>
+      <p class="footer-year">© 2024 Respos-Connect</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════ AI ASSISTANT ══════════════════ -->
+  <div class="ai-assistant" id="aiAssistant" role="complementary" aria-label="AI Facts Assistant">
+    <button class="assistant-toggle" id="assistantToggle" aria-label="Toggle AI assistant" aria-expanded="false" aria-controls="assistantPanel">
+      <div class="assistant-avatar" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <circle cx="14" cy="14" r="13" fill="url(#agrad)" />
+          <circle cx="10" cy="12" r="2" fill="white" />
+          <circle cx="18" cy="12" r="2" fill="white" />
+          <path d="M9 18 Q14 22 19 18" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M14 2 L14 6 M14 22 L14 26 M2 14 L6 14 M22 14 L26 14" stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+          <defs>
+            <linearGradient id="agrad" x1="0" y1="0" x2="28" y2="28">
+              <stop offset="0%" stop-color="#d4af37"/>
+              <stop offset="100%" stop-color="#8b6914"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="pulse-ring" aria-hidden="true"></span>
+      </div>
+      <span class="assistant-label">AI Facts</span>
+    </button>
+    <div class="assistant-panel" id="assistantPanel" role="dialog" aria-modal="false" aria-label="AI Facts Panel" hidden>
+      <div class="panel-header">
+        <div class="panel-avatar" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="13" fill="url(#agrad2)"/>
+            <circle cx="10" cy="12" r="2" fill="white"/>
+            <circle cx="18" cy="12" r="2" fill="white"/>
+            <path d="M9 18 Q14 22 19 18" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <defs>
+              <linearGradient id="agrad2" x1="0" y1="0" x2="28" y2="28">
+                <stop offset="0%" stop-color="#d4af37"/>
+                <stop offset="100%" stop-color="#8b6914"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div>
+          <p class="panel-name">Aria <span class="panel-badge">AI</span></p>
+          <p class="panel-status">Sharing AI insights</p>
+        </div>
+        <button class="panel-close" id="panelClose" aria-label="Close AI assistant panel">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 3 L13 13 M13 3 L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="panel-body">
+        <div class="fact-bubble" id="factBubble" role="status" aria-live="polite">
+          <p class="fact-text" id="factText">Did you know? The term "Artificial Intelligence" was coined by John McCarthy in 1956 at the Dartmouth Conference — considered the birth of AI as a field.</p>
+        </div>
+        <div class="fact-controls">
+          <button class="fact-btn" id="prevFact" aria-label="Previous AI fact">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M9 2 L4 7 L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="fact-counter" id="factCounter" aria-label="Fact 1 of 12">1 / 12</span>
+          <button class="fact-btn" id="nextFact" aria-label="Next AI fact">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M5 2 L10 7 L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="fact-dots" id="factDots" role="list" aria-label="Fact navigation dots"></div>
+      </div>
+      <div class="panel-footer">
+        <span>Auto-advances every 8s</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <path d="M5 12 L10 7 L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
